@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title> student  form using jpdb </title>
+       
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css" type="text/css"/>
+
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="page-header text-center">
+  <form id="stuForm" method="get">
+    <div class="form-group">
+      <label for="Rolno">Roll NO:</label>
+      <input type="text" class="form-control" id="Rolno"  class="form-control" placeholder="Enter Roll NO" onchange= getRollNO()>
+    </div>
+    <div class="form-group">
+      <label for="fulname">Full-Name:</label>
+      <input type="text" class="form-control" id="fulname" class="form-control" placeholder="Enter Full-Name">
+    </div>
+    <div class="form-group">
+      <label for="class">Class:</label>
+      <input type="text" class="form-control" id="clas" placeholder="Enter Class">
+    </div>
+    <div class="form-group">
+      <label for="stuDOB">DOB</label>
+      <input type="date" class="form-control" id="dob" class="form-control" placeholder="Enter Date  of birth">
+    </div>
+    <div class="form-group">
+      <label for="adress">Address:</label>
+      <input type="text" class="form-control" id="addr" class="form-control" placeholder="Enter ADDress">
+    </div>
+    <div class="form-group">
+      <label for="enrollmentDate">EnrollmenDate:</label>
+      <input type="date" class="form-control" id="enoldate" placeholder="Enter Enrollment Date">
+    </div>
+    <button type="button" class="btn btn-lg btn-primary" id='save'  onclick= "SaveData()" disabled>Save</button>
+    <button type="button" class="btn btn-lg  btn-primary" id='change' onclick= "changeData()" disabled>Change</button>
+    <button type="button" class="btn btn-lg btn-primary" id='reset' onclick= "resetForm()" disabled>Reset</button>
+  </form>
+</div>
+    <script type ="text/javascript" src="http://login2explore.com/jpdb/resources/js/0.03/jpdb-commons.js"> </script>
+    <script type="text/javascript" src="index.js"></script>
+  
+</body>
+  </html>
+  
